@@ -10,9 +10,7 @@ import android.support.annotation.Nullable;
 import android.widget.TextView;
 
 public class DbController extends SQLiteOpenHelper {
-
-
-    public DbController(Context context,String s, SQLiteDatabase.CursorFactory factory,int version) {
+    public DbController( Context context,  String name,  SQLiteDatabase.CursorFactory factory, int version) {
         super( context, "StudentDatabase.db", factory, version);
     }
 
